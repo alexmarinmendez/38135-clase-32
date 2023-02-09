@@ -1,6 +1,7 @@
 import express from 'express'
 import cluster from 'cluster'
 import { cpus } from 'os'
+import isPrime from './utils/isPrime.js'
 
 const PORT = parseInt(process.argv[2]) || 8080
 const modoCluster = process.argv[3] == 'CLUSTER'
